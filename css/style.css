@@ -1,0 +1,749 @@
+:root{
+    --main-bg-color: #FBFBFB;
+    --sec-bg-color: #151419;
+    --main-text-color: #1B1B1E;
+    --sec-txt-color: #262626;
+    --thi-text-color: #878787;
+    --paint-color: #F56E0F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 2rem;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.05);
+}
+
+.navbar a {
+    padding: 1rem 1rem;
+}
+
+.navbar a:hover {
+    background-color: var(--paint-color);
+    border-radius: 5px;
+    color: var(--main-bg-color);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.text-logo {
+    margin: 0 3rem;
+    display: flex;
+    color: var(--paint-color);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paint-color);
+    padding: 5rem;
+    margin: 2rem 0;
+    gap: 3rem;
+    
+}
+
+.heading p {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--main-bg-color);
+}
+
+.heading img {
+    width: 100%;
+}
+
+.faq {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4rem;
+    margin: 2rem 4rem;
+}
+
+.faq-title {
+    margin: 0 3rem;
+}
+
+.questions {
+    font-size: 15px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 4rem;
+    margin: 2rem 4rem;
+}
+
+.contact-info {
+    padding: 2rem 2rem;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 4px 15px 2px rgba(0,0,0,.02);
+}
+
+.contact-info:hover {
+    box-shadow: 2px 4px 15px 2px rgba(0,0,0,.05);
+}
+    
+
+.contact-info h3 {
+    margin: 0;
+    color: var(--paint-color);
+    font-weight: 200;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+.about-container {
+    padding: 3rem 10rem;
+    color: var(--main-text-color);
+    display: flex;
+    gap: 4rem;
+}
+
+.about-container img {
+    width: 100%;
+}
+
+.about-text {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about-text b {
+    color: var(--paint-color);
+}
+
+.about-subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10rem;
+    border-top: 3px solid var(--sec-bg-color);
+}
+
+.bottom-line {
+    margin: 3rem 10rem;
+    border-bottom: 3px solid var(--sec-bg-color);
+}
+
+.about-subcontainer h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3rem;
+}
+
+.about-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-journey {
+    background-color: var(--paint-color);
+    margin: 2rem 10rem;
+    padding: 3rem 3rem;
+    color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.text-content p {
+    text-align: justify;
+}
+
+.text-journey p {
+    text-align: center;
+}
+
+.image-bg img {
+    width: 100%;
+}
+
+.pricing-text-head {
+    position: absolute;
+    margin: 10rem 10rem;
+    color: var(--main-text-color)
+}
+
+.pricing-text-head h1 {
+    font-size: 50px;
+}
+
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--thi-text-color);
+    border-radius: 10px;
+    margin: 3rem 10rem;
+}
+
+.pricing-section h1, .pricing-section p {
+    color: var(--main-text-color);
+}
+
+.flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.flags img {
+    width: 5%;
+    height: 100%;
+}
+
+.flags h4 {
+    margin-right: 2rem;
+}
+
+.price-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+.price-text {
+    border-bottom: 1px solid var(--sec-bg-color);
+}
+
+.price-text h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.price-text p {
+    text-align: center;
+    font-size: 10px;
+    color: var(--sec-txt-color);
+    font-weight: bold;
+}
+
+.price-text-2 p {
+    margin: 2rem 10rem;
+    text-align: center;
+    color: var(--thi-text-color);
+    font-size: 15px;
+}
+
+.restriction-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 1px solid var(--sec-txt-color);
+    margin: 4rem 5rem;
+    
+}
+
+.restriction-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.restriction-title h3 {
+    font-size: 20px;
+}
+
+.restriction-title img {
+    width: 4%;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.restriction-content {
+    line-height: 2rem;
+}
+
+.title {
+    color: var(--paint-color);
+    font-weight: bold;
+    border-bottom: 1px solid var(--paint-color);
+}
+
+.advantage-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 7rem;
+}
+
+.advantage-section h1 {
+    color: var(--paint-color);
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.advantage-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+
+.advantage-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantage-box img {
+    height: auto;
+    width: 10%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+
+}
+
+.title h1 {
+    font-size: 30px;
+}
+
+.warehouse-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 4rem;
+}
+
+.warehouse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 15px 2px rgba(0,0,0,.05);
+}
+
+.warehouse-container:hover {
+    box-shadow: 2px 4px 15px 2px rgba(0,0,0,.10);
+    background-color: var(--paint-color);
+    color: var(--main-bg-color);
+}
+
+.warehouse-map img {
+    width: 70%;
+    padding: 1rem 1rem;
+}
+
+.prohibited-items {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 4rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 2rem;
+}
+
+.prohibited-items-card img {
+    width: 100%;
+}
+
+.prohibited-items-card-container {
+    --bg: #f7f7f8;
+    background: var(--bg);
+    --hover-bg: var(--paint-color);
+    --hover-text: var(--main-bg-color);
+    max-width: 22ch;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.prohibited-items-card-container > :not(span) {
+    transition: .3s cubic-bezier(.6,.4,0,1);
+  }
+
+.prohibited-items-card-container span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6,.4,0,1);
+}
+
+.prohibited-items-card-container:hover span {
+    top: 0;
+  }
+
+.prohibited-items-card-container:hover {
+    background: var(--hover-bg);
+  }
+  
+.prohibited-items-card-container:hover>div,.prohibited-items-card-container:hover>strong {
+    opacity: 0;
+  }
+
+.prohibited-items-card-container span p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid var(--paint-color);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--paint-color);
+    
+}
+
+.text-container h3 {
+    font-size: 25px;
+}
+
+.text-container p {
+    font-size: 18px;
+}
+
+.title-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-image img {
+    width: 80%;
+}
+
+.ship-guide-body {
+    padding: 4rem 4rem;
+}
+
+.ship-guide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 4rem;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.10);
+}
+
+.ship-guide-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--paint-color);
+}
+
+.ship-guide-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ship-guide-img img {
+    width: 100%;
+}
+
+.ship-guide-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 4rem;
+    text-align: justify;
+    max-width: 75ch;
+}
+
+.ship-guide-text ul li{
+    line-height: 2rem;
+}
+
+.ship-guide-text a {
+    text-decoration: none;
+    color: var(--paint-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    gap: 5rem;
+}
+
+.subfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    color: var(--thi-text-color);
+    border-top: 1px solid var(--paint-color);
+}
+
+.footer-content {
+    border-bottom: 2px;
+    margin: 2rem 5rem;
+}
+
+.footer-logo {
+    color: var(--paint-color);
+    font-size: 20px;
+}
+
+.socmed-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.socmed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.socmed-content p {
+    color: var(--thi-text-color);
+    white-space: nowrap;
+}
+
+.socmed img {
+    width: 20%;
+    height: 100%
+}
+
+.footer-navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-navbar-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+}
+
+.footer-navbar-content h2 {
+    color: var(--main-bg-color);
+}
+
+.footer-navbar-content a {
+    text-decoration: none;
+    color: var(--thi-text-color);
+    font-weight: 400;
+    margin: .5rem 0;
+}
+
+.footer-navbar-content a:hover {
+    color: var(--paint-color);
+}
+
+
+@media only screen and (max-width: 769px) {
+
+    .text-logo {
+        margin: 0 1rem;
+    }
+
+    .navbar {
+       margin: 1rem 1rem;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem 6rem;
+        gap: 2rem;
+    }
+
+    .about-subcontainer {
+        margin: 0 6rem;
+    }
+
+    .pricing-section {
+        margin: 2rem 6rem;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .warehouse-content {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .warehouse-map img {
+        width: 80%;
+    }
+
+    .warehouse-add {
+        font-size: 15px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .ship-guide-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ship-guide-img img {
+        width: 50%;
+    }
+
+    .ship-guide-text {
+        width: 60ch;
+    }
+
+    .footer-container {
+        gap: 0;
+    }
+
+    .footer-navbar {
+        display: flex;
+        flex-direction: column;
+    }  
+}
+
+@media only screen and (max-width: 426px) {
+
+    .text-logo {
+        margin: 0 1rem;
+    }
+
+    .navbar {
+       margin: 1rem 1rem;
+       width: 100%;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 120%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .faq, .contact-section {
+        width: 100%;
+    }
+
+    .about-container, .about-subcontainer {
+        width: 100%;
+    }
+
+    .about-journey {
+        width: 90%;
+        margin: 3rem 6rem;
+        padding: 2rem 3rem;
+    }
+
+    .bottom-line {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .warehouse-content {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 2rem 2rem;
+    }
+
+    .warehouse-map img {
+        width: 100%;
+    }
+
+    .warehouse-add {
+        font-size: 20px;
+    }
+
+    .ship-guide-text {
+        max-width: 90ch;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+ 
+}

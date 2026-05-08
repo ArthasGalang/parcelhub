@@ -1,0 +1,17 @@
+{
+    "name": "sahtr/parcelhub",
+    "autoload": {
+        "psr-4": {
+            "Sahtr\\Parcelhub\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arthas Galang",
+            "email": "sahtragalang@gmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^2.3"
+    }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": 21,
+    "user_id": "69fe346bf5bad835c50422f0",
+    "tracking_no": "2222",
+    "total_weight_lb": 0,
+    "declared_shipment": 1,
+    "no_of_order": 1,
+    "totalPrice": "1476.00",
+    "warehouse": "United States",
+    "timestamp": "2026-05-08T22:47:58Z",
+    "order_status": "Pending",
+    "confirmed_payment": 0
+  },
+  {
+    "id": 22,
+    "user_id": "69fe346bf5bad835c50422f0",
+    "tracking_no": "12312",
+    "total_weight_lb": 0,
+    "declared_shipment": 0,
+    "no_of_order": 1,
+    "totalPrice": "123.00",
+    "warehouse": "South Korea",
+    "timestamp": "2026-05-08T22:48:29Z",
+    "order_status": "Pending",
+    "confirmed_payment": 0
+  },
+  {
+    "id": 23,
+    "user_id": "69fe346bf5bad835c50422f0",
+    "tracking_no": "G543216781",
+    "total_weight_lb": 0,
+    "declared_shipment": 1,
+    "no_of_order": 1,
+    "totalPrice": "12.00",
+    "warehouse": "Canada",
+    "timestamp": "2024-12-07T15:11:31Z",
+    "order_status": "Pending",
+    "confirmed_payment": 0
+  },
+  {
+    "id": 24,
+    "user_id": "69fe346bf5bad835c50422f0",
+    "tracking_no": "G5432167821",
+    "total_weight_lb": 0,
+    "declared_shipment": 0,
+    "no_of_order": 1,
+    "totalPrice": "599.00",
+    "warehouse": "Australia",
+    "timestamp": "2024-12-07T15:12:15Z",
+    "order_status": "Pending",
+    "confirmed_payment": 0
+  }
+]

@@ -1,0 +1,59 @@
+
+## --------Prerequisites
+
+- **PHP** 7.4 or higher
+- **MongoDB** 4.0 or higher
+- **Composer** for PHP dependency management
+- **Web Server** (Apache with mod_rewrite enabled, or Nginx)
+- **MySQL** 5.7 or higher (optional, for legacy support)
+
+## --------Installation
+
+### 1. Clone or Download the Project
+
+```bash
+cd /path/to/your/webroot
+git clone <repository-url> parcelhub
+cd parcelhub
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+```
+
+
+### 3. Database Setup
+
+```bash
+# Test your MongoDB connection
+php test_mongo_connection.php
+
+# Manually insert data
+php mongo_manual_insert.php
+```
+
+
+## --------Running the Application
+
+### 1. Start MongoDB
+
+```bash
+mongod --dbpath /path/to/db
+```
+
+### 2. Start Your Web Server
+
+
+```bash
+cd /path/to/parcelhub
+php -S localhost:8000
+```
+
+### 3. Access the Application
+
+```
+http://localhost:8000/
+```
+

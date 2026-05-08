@@ -1,0 +1,42 @@
+[
+  {
+    "id": 24,
+    "user_id": 1,
+    "first_name": "Max",
+    "last_name": "Pain",
+    "mobile_number": "8438779017",
+    "address": "433 Foxtail Drive",
+    "zip_code": "29568",
+    "is_default": 1
+  },
+  {
+    "id": 25,
+    "user_id": null,
+    "first_name": "Jan Arthas",
+    "last_name": "Galang",
+    "mobile_number": "09474062871",
+    "address": "222 Cologong 2 Valenzuela City",
+    "zip_code": "1445",
+    "is_default": 0
+  },
+  {
+    "id": 26,
+    "user_id": null,
+    "first_name": "12213",
+    "last_name": "123123",
+    "mobile_number": "12312312312",
+    "address": "123123",
+    "zip_code": "123123",
+    "is_default": 0
+  },
+  {
+    "id": 27,
+    "user_id": "69fcbc1590254",
+    "first_name": "222",
+    "last_name": "222",
+    "mobile_number": "2",
+    "address": "22",
+    "zip_code": "2",
+    "is_default": 0
+  }
+]

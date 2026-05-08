@@ -1,0 +1,200 @@
+<?php
+require 'vendor/autoload.php'; // Composer autoload
+
+use MongoDB\Client;
+
+$uri = "mongodb+srv://parcelhub_db_user:parcelhub@parcelhub.wkkzxp1.mongodb.net/?appName=ParcelHub";
+$client = new Client($uri);
+$db = $client->selectDatabase('parcelhub');
+
+// Insert for account_tbl
+$db->account_tbl->insertOne([
+    'id' => 1,
+    'member_id' => '46DAF7',
+    'first_name' => 'Max',
+    'last_name' => 'Laga',
+    'email' => '',
+    'password' => '',
+    'created_at' => '2024-11-30 04:14:09',
+]);
+
+// Insert for declare_shipment_order_tbl
+$db->declare_shipment_order_tbl->insertMany([
+    [
+        'id' => 21,
+        'user_id' => 6,
+        'tracking_no' => 'G543216781',
+        'total_weight_lb' => 0.00,
+        'declared_shipment' => 0,
+        'no_of_order' => 1,
+        'totalPrice' => 12.00,
+        'warehouse' => 'Canada',
+        'timestamp' => '2024-12-07 15:11:31',
+        'order_status' => 'Pending',
+        'confirmed_payment' => 0,
+    ],
+    [
+        'id' => 22,
+        'user_id' => 6,
+        'tracking_no' => 'G5432167821',
+        'total_weight_lb' => 0.00,
+        'declared_shipment' => 0,
+        'no_of_order' => 1,
+        'totalPrice' => 599.00,
+        'warehouse' => 'Australia',
+        'timestamp' => '2024-12-07 15:12:15',
+        'order_status' => 'Pending',
+        'confirmed_payment' => 0,
+    ],
+]);
+
+// Insert for deliveryaddress_tbl
+$db->deliveryaddress_tbl->insertOne([
+    'id' => 24,
+    'user_id' => 1,
+    'first_name' => 'Max',
+    'last_name' => 'Pain',
+    'mobile_number' => '8438779017',
+    'address' => '433 Foxtail Drive',
+    'zip_code' => '29568',
+    'is_default' => 1,
+]);
+
+// Insert for order_tbl
+$db->order_tbl->insertMany([
+    [
+        'id' => 20,
+        'user_id' => 6,
+        'tracking_no' => 'G543216781',
+        'product_type' => 'Handmade',
+        'product_name' => '4242',
+        'quantity' => 1,
+        'unit_price' => 12.00,
+    ],
+    [
+        'id' => 21,
+        'user_id' => 6,
+        'tracking_no' => 'G5432167821',
+        'product_type' => 'Movies, Music $ Games',
+        'product_name' => 'Pokemon Sword 3DS',
+        'quantity' => 1,
+        'unit_price' => 599.00,
+    ],
+]);
+
+// Insert for paid_orders_tbl
+$db->paid_orders_tbl->insertOne([
+    'order_id' => 7,
+    'user_id' => 1,
+    'tracking_no' => '3686354338FF',
+    'total_weight_lb' => 5.90,
+    'no_of_order' => 1,
+    'totalPrice' => 134.00,
+    'total_shipping_fee' => 1920.00,
+    'payment_method' => 'Gcash',
+    'base_shipping_fee_per_lb' => 5.00,
+    'name' => 'Max Pain',
+    'address' => '433 Foxtail Drive',
+    'mobile_no' => '8438779017',
+    'order_status' => 'Delivered',
+    'dateTime' => '2024-12-09 04:27:14',
+    'warehouse' => 'United States',
+]);
+
+// Insert for warehouse_addresses_tbl
+$db->warehouse_addresses_tbl->insertMany([
+    [
+        'id' => 1,
+        'address' => '123 Maple Street',
+        'city' => 'Toronto',
+        'state' => 'Ontario',
+        'zip_code' => 'M5A 2B7',
+        'country' => 'Canada',
+        'tel' => '+1 416-555-0198',
+        'img_path' => '../assets/country/ca.png',
+    ],
+    [
+        'id' => 2,
+        'address' => '45 High Street',
+        'city' => 'London',
+        'state' => null,
+        'zip_code' => 'W1U 4QS',
+        'country' => 'United Kingdom',
+        'tel' => '+44 20 7946 0958',
+        'img_path' => '../assets/country/uk.png',
+    ],
+    [
+        'id' => 3,
+        'address' => '101 Main Street',
+        'city' => 'Los Angeles',
+        'state' => 'California',
+        'zip_code' => '90001',
+        'country' => 'United States',
+        'tel' => '+1 310-555-0199',
+        'img_path' => '../assets/country/us.png',
+    ],
+    [
+        'id' => 4,
+        'address' => '2-3-1 Shibuya',
+        'city' => 'Tokyo',
+        'state' => null,
+        'zip_code' => '150-0002',
+        'country' => 'Japan',
+        'tel' => '+81 3-5555-6789',
+        'img_path' => '../assets/country/jp.png',
+    ],
+    [
+        'id' => 5,
+        'address' => '88 King Street',
+        'city' => 'Sydney',
+        'state' => 'New South Wales',
+        'zip_code' => '2000',
+        'country' => 'Australia',
+        'tel' => '+61 2 5555 6789',
+        'img_path' => '../assets/country/au.png',
+    ],
+    [
+        'id' => 6,
+        'address' => '77 Gangnam-daero',
+        'city' => 'Seoul',
+        'state' => null,
+        'zip_code' => '06050',
+        'country' => 'South Korea',
+        'tel' => '+82 2-555-1234',
+        'img_path' => '../assets/country/kr.png',
+    ],
+    [
+        'id' => 7,
+        'address' => '123 Beijing Road',
+        'city' => 'Beijing',
+        'state' => null,
+        'zip_code' => '100000',
+        'country' => 'China',
+        'tel' => '+86 10-5555-6789',
+        'img_path' => '../assets/country/cn.png',
+    ],
+    [
+        'id' => 8,
+        'address' => '45 Xinyi Road',
+        'city' => 'Taipei',
+        'state' => null,
+        'zip_code' => '11051',
+        'country' => 'Taiwan',
+        'tel' => '+886 2-5555-1234',
+        'img_path' => '../assets/country/tw.png',
+    ],
+]);
+
+echo "Manual data insertion completed.\n";
+
+// Verification - check what collections exist
+echo "\n=== MongoDB Atlas Collections Status ===\n";
+$collections = ['users', 'orders', 'shipments', 'deliveries', 'payments', 'warehouses', 'account_tbl'];
+foreach ($collections as $collName) {
+    try {
+        $count = $db->selectCollection($collName)->countDocuments([]);
+        echo "$collName: $count documents\n";
+    } catch (Exception $e) {
+        echo "$collName: Error checking\n";
+    }
+}

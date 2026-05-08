@@ -1,0 +1,26 @@
+[
+  {
+    "member_id": "C241DC",
+    "first_name": "test",
+    "last_name": "test",
+    "email": "test@test",
+    "password": "$2y$12$PB83mCBDxp0LJqERkA0Pv0wqYM7rm8b4PFh1wKITxDaxfLajCXuSy",
+    "created_at": "2026-05-08T08:47:56.942Z"
+  },
+  {
+    "member_id": "732CF7",
+    "first_name": "asda",
+    "last_name": "asd",
+    "email": "asd@asd",
+    "password": "$2y$12SVTvxQfqdb18SB.uSuWMi/e8.3PQ4QDRLKtozINykCJuxoyuwgy8dq",
+    "created_at": "2026-05-08T19:07:23.320Z"
+  },
+  {
+    "member_id": "46DAF7",
+    "first_name": "Max",
+    "last_name": "Laga",
+    "email": "",
+    "password": "",
+    "created_at": "2024-11-30T04:14:09Z"
+  }
+]

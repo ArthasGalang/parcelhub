@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+.bg-login {
+    background-image: url(../assets/bg-3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.box-login {
+    background: white;
+    columns: 18rem;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.logo-text h4 {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.email-box,
+.pw-box,
+.login-btn {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.form-control {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-btn .btn {
+    background-color: orange;
+    color: white;
+    padding: 12px 34px;
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.remember-box {
+    margin-top: 8px;
+}
+
+.account {
+    margin-top: 14px;
+}
+
+.account p {
+    font-size: 15px;
+}
+
+.account p a {
+    color: #ffff;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: .6;
+}
+
+
+.forgot-pw {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.forgot-pw p a {
+    text-decoration: none;
+}
+
+.message {
+    display: none;
+    columns: 18rem;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.message-error {
+    background-color: #f74553;
+    color: #ffffff;
+    border: 1px solid #f5c6cb;
+}
+.message-success {
+    background-color: #4cf072;
+    color: #ffffff;
+    border: 1px solid #c3e6cb;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+.pw-box {
+    position: relative;
+}

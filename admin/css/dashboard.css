@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: fit-content;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+.dashboard {
+    box-sizing: border-box;
+}
+
+.whole-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    align-items: stretch;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 96;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    border-right: 1px solid #e3e3e3;
+    background-color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .02);
+}
+
+.nav-bg {
+    display: block;
+    min-width: 300px;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .35;
+    background-color: orange;
+    justify-content: center;
+}
+
+.sidebar-logo .back-icon {
+    display: flex;
+    align-items: center;
+    background-color: #f9f8f4;
+    border-radius: 8px;
+}
+
+.sidebar-logo h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu-nav {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 16px;
+}
+
+.sidebar-menu-nav-section {
+    padding: 0 16px 0 16px;
+}
+
+.sidebard-menu-nav-item_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebard-menu-nav-item-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: .35px;
+    color: #151515;
+    transition: background-color 0.3s ease;
+}
+
+.sidebard-menu-nav-item-item i {
+    font-size: 16px;
+}
+
+.sidebard-menu-nav-item-item span {
+    font-size: 18px;
+}
+
+.sidebard-menu-nav-item-item:hover {
+    background-color: #f9f8f4;
+    border-radius: 8px;
+}
+
+.sidebard-menu-nav-item-item.active {
+    background-color: #f9f8f4;
+    border-radius: 8px;
+    color: orange;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: .35px;
+}
+
+.sidebar-devider {
+    height: 1px;
+    background-color: #e3e3e3;
+    margin: 16px 0;
+}
+
+.sidebar-section-text {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: .35px;
+    padding: 8px 12px;
+    color: #818181;
+    margin: 0;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    margin: 50px;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.declared-shipments-title {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .35px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 120px;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 120px;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+    width: 100px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+select {
+    width: 100px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+button.save-btn {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ccc;
+    color: #666;
+    border: 1px solid #aaa;
+    cursor: not-allowed;
+}
+
+button.save-btn.active {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+    cursor: pointer;
+}
+
+button.delete-btn {
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #e72c2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

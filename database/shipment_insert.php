@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'user_id' => $user_id,
             'tracking_no' => $trackNumber,
             'total_weight_lb' => 0,
-            'declared_shipment' => 0,
+            'declared_shipment' => 1,
             'no_of_order' => $itemCount,
             'totalPrice' => $totalValue,
             'warehouse' => $warehouse,

@@ -47,7 +47,7 @@
     "zip_code": "2000",
     "country": "Australia",
     "tel": "+61 2 5555 6789",
-    "img_path": "./assets/country/au.png"
+    "img_path": "../assets/country/au.png"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "zip_code": "06050",
     "country": "South Korea",
     "tel": "+82 2-555-1234",
-    "img_path": "./assets/country/kr.png"
+    "img_path": "../assets/country/kr.png"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "zip_code": "100000",
     "country": "China",
     "tel": "+86 10-5555-6789",
-    "img_path": "./assets/country/cn.png"
+    "img_path": "../assets/country/cn.png"
   },
   {
     "id": 8,
@@ -77,6 +77,6 @@
     "zip_code": "11051",
     "country": "Taiwan",
     "tel": "+886 2-5555-1234",
-    "img_path": "./assets/country/tw.png"
+    "img_path": "../assets/country/tw.png"
   }
 ]

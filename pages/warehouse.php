@@ -180,7 +180,7 @@ $country_to_page = [
                                     $warehouse_url = "./warehouse/" . $page_file . ".php?country=" . urlencode($country);
                                     ?>
                                     <a href="<?php echo $warehouse_url; ?>" style="text-decoration: none; color: inherit;">
-                                        <div class="warehouse-address" style="cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                                        <div class="warehouse-address" style="cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; display: flex; align-items: center; gap: 10px; margin-bottom: 15px;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
                                             <img src="<?php echo htmlspecialchars($warehouse['img_path']); ?>" alt="<?php echo $country; ?>" style="width:60px;height:40px;object-fit:cover;">
                                             <div class="warehouse-info">
                                                 <strong><?php echo htmlspecialchars($warehouse['city']); ?></strong>, <?php echo $country; ?>
